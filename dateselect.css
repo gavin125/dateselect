@@ -1,0 +1,18 @@
+.dateBox{ border: solid 1px #aaa; padding: 5px; background: #fff; position: absolute; z-index:10000; font-size: 12px; width: 210px; }
+.dateBox .dBox_head{ position: relative;}
+.dateBox .dBox_head .prevBtn,.dateBox .dBox_head .nextBtn{ position:absolute; top:0; left: 0; display: block; width: 20px; height: 20px; border:solid 1px #aaa; cursor: pointer; }
+.dateBox .dBox_head .nextBtn{ left: auto; right:0;}
+.dateBox .dBox_head .prevBtn:hover,.dateBox .dBox_head .nextBtn:hover{ border-color: #666;}
+.dateBox .dBox_head .shape{ display: block; width: 0; height: 0; border:solid 6px; border-color: transparent #aaa transparent transparent; position: absolute; top:4px; left: 1px;}
+.dateBox .dBox_head :hover .shape{border-color: transparent #666 transparent transparent;}
+.dateBox .dBox_head .nextBtn .shape{ border-color: transparent transparent transparent #aaa; top:4px; left: 7px;}
+.dateBox .dBox_head .nextBtn:hover .shape{border-color: transparent transparent transparent #666;}
+.dateBox .dBox_head .month{ margin: 0 25px; display: inline-block; width: 160px; text-align: center; border: none; height: 20px; outline: none;}
+.dateBox .dBox_body{ margin:5px 0 2px; }
+.dateBox .dBox_body dl{ overflow: hidden;}
+.dateBox .dBox_body dt{ float: left; width: 28px; text-align: center; background: #aaa; padding: 5px 0; margin: 1px;}
+.dateBox .dBox_body dd{ float: left; width: 28px; text-align: center; padding: 5px 0; margin: 1px; }
+.dateBox .dBox_body .day{ cursor: pointer; }
+.dateBox .dBox_body .day:hover{ background: #ccc; }
+.dateBox .dBox_body .current{ background: #eee; }
+.dateBox .dBox_body .day.select{ background: #fc0; margin: 0; border: solid 1px #f60; }
